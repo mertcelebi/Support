@@ -1,0 +1,67 @@
+// Style
+$container-pad: 15px;
+$browser-pad: 50px;
+$browser-text-width: 50%;
+$browser-text-height: 700px;
+$browser-height: $browser-text-height - 100px;
+
+.slide-provider-bg {
+  //border-bottom: 1px solid $blue;
+  background-image: asset-url('provider_bg.png');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.browser-slide {
+  padding-top: $browser-pad;
+}
+
+.browser {
+  height: $browser-height;
+  background-image: asset-url('browser.png');
+  background-size: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  background-color: white;
+  position: absolute;
+  top: $browser-pad;
+  left: $browser-text-width;
+  z-index: 1;
+  border-bottom: 2px solid $border-grey;
+
+  @include desktop {
+    width: 900px;
+    padding: 38px 2px 0 2px;
+  }
+
+  .provider-video {
+    width: 100%;
+    margin-bottom: -5px;
+    display: none;
+  }
+
+  &.fixed {
+    position: fixed;
+    top: 2 * $browser-pad;
+  }
+
+  &.end {
+    position: absolute;
+    top: auto;
+    bottom: $browser-text-height - $browser-height;
+  }
+}
+
+.browser-container {
+  margin-left: $browser-pad - $container-pad;
+  @include calc(width, "#{$browser-text-width} - #{$browser-pad}");
+  height: $browser-text-height;
+}
+
+.browser-text {
+  padding-top: 7em;
+  padding-right: 20px;
+}

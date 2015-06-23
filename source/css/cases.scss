@@ -1,0 +1,77 @@
+// Variables
+$use-case-height: 500px;
+$use-case-text-width: 40%;
+
+// Style
+.use-case-container,
+.use-case-bg {
+  width: 100%;
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
+
+.use-case-container {
+  height: $use-case-height;
+
+  @include mobile {
+    height: auto;
+    background-image: none !important;
+  }
+}
+
+.use-case-bg {
+  height: 0.75 * $use-case-height;
+}
+
+.use-case-bg-right {
+  background-position-x: right;
+}
+
+.use-case-bg-left {
+  background-position-x: left;
+}
+
+.use-case-text,
+.use-case-text-right {
+  position: relative;
+
+  @include desktop {  
+    width: $use-case-text-width;
+    padding: 5em 0;
+  }
+
+  @include mobile {
+    width: 100%;
+    padding: 2em 0;
+  }
+
+  h2 {
+    font-size: 2.8em;
+    color: $blue;
+    font-family: $sans-ultralight;
+  }
+
+  h5 {
+    font-size: 1.1em;
+    line-height: 1.5;
+    font-family: $sans-light;
+    color: darken($dark-grey, 10%);
+  }
+
+  &.light {
+    @include desktop {
+      h2,
+      h5 {
+        color: white;
+      }
+    }
+  }
+}
+
+.use-case-text-right {
+  @include desktop {  
+    left: 95% - $use-case-text-width;
+  }
+}
+

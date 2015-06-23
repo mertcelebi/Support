@@ -1,0 +1,177 @@
+// Variables
+$width: 1100px;
+$container-pad: 50px;
+$bg-color: white;
+
+// Style
+body {
+  background-color: $light-blue;
+}
+
+.wrapper {
+  margin: auto;
+  z-index: 1;
+  position: relative;
+
+  @include desktop {
+    width: 80%;
+    max-width: $width;
+  }
+
+  @include mobile {
+    width: 90%;
+  }
+}
+
+.container {
+  width: 100%;
+  background-color: $bg-color;
+
+  &.padded {
+    padding: 3em 0;
+  }
+}
+
+#how-it-works,
+#use-cases,
+#pricing {
+  padding: 2em 0;
+}
+
+.container-header {
+  font-family: $sans-ultralight;
+  text-align: center;
+  margin-bottom: 0.5em;
+  color: $blue;
+  font-size: 3em;
+}
+
+.container-subheader {
+  font-family: $sans-light;
+  text-align: center;
+  font-size: 1.2em;
+  margin: 0 0 2em 0;
+
+  a {
+    color: black;
+  }
+}
+
+.contact-content {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 3em;
+  
+  .row {
+    margin-bottom: 2em;
+  }
+
+  p {
+    font-family: $sans-light;
+    font-size: 1.5em;
+    line-height: 1.5;
+    display: inline-block;
+    margin: 0;
+  }
+
+  .col-md-5 {
+    p {
+      font-family: $sans;
+      font-weight: 500;
+    }
+  }
+
+  @include mobile {
+    text-align: center;
+  }
+
+  @include desktop {
+    .col-md-5 {
+      text-align: right;
+    }
+
+    .col-md-7 {
+      text-align: left;
+    }
+  }
+}
+
+.about-content {
+  text-align: center;
+  
+  $about-unit: 200px;
+  .about-col {
+    display: inline-block;
+    margin: auto;
+    margin-bottom: 50px;
+    width: 24%;
+    min-width: $about-unit;
+    vertical-align: top;
+    text-align: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-family: $sans;
+    
+    $about-photo: $about-unit / 1.5;
+    .about-photo {
+      margin: auto;
+      width: $about-photo;
+      height: $about-photo;
+      border-radius: $about-photo / 2;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-bottom: 20px;
+      border: 1px solid #777;
+    }
+    
+    h5,
+    p,
+    a {
+      margin: 0;
+      padding: 0;
+    }
+    
+    h5 {
+      font-family: $sans-light;
+      font-weight: 200;
+      font-size: 0.9em;
+      line-height: 200%;
+    }
+    
+    p,
+    a {
+      font-size: 12px;
+      color: $blue;
+      line-height: 150%;
+    }
+    
+    a {
+      &:hover {
+        color: $dark-blue;
+      }
+    }
+  }
+}
+
+.btn-primary {
+  display: inline-block;
+  font-family: $sans-light;
+  color: $blue;
+  background-color: white;
+  border: 2px solid $blue;
+  border-radius: 5px;
+  padding: 20px 100px;
+  font-size: 20px;
+  line-height: 150%;
+  cursor: pointer;
+  @include transition(0.2s);
+  
+  &:active {
+    outline: none;
+  }
+  
+  &:hover {
+    background-color: transparent;
+  }
+}

@@ -1,0 +1,68 @@
+// Variables
+$subheader-height: 60px;
+
+// Style
+#subheader-waypoint {
+  width: 100%;
+}
+
+.subheader {
+  width: 100%;
+  border-top: 1px solid $border-grey;
+  border-bottom: 1px solid $border-grey;
+  background-color: $light-grey;
+  z-index: 100;
+
+  &.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    .get-started {
+      background-color: $green;
+      border-color: $green;
+      color: white;
+
+      $hover-color: darken($green, 10%);
+      &:hover {
+        background-color: $hover-color;
+        border-color: $hover-color;
+      }
+    }
+  }
+
+  a {
+    text-transform: uppercase;
+    font-family: $sans-light;
+    font-weight: 500;
+    font-size: 0.9em;
+    color: $dark-grey;
+    margin-right: 1em;
+    @include transition(0.3s);
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+
+  .links {
+    padding: 1.5em 0;
+    display: inline-block;
+    line-height: 1;
+  }
+
+  .get-started {
+    margin: 1em;
+    padding: 0.5em 1em;
+    border: 2px solid lighten($blue, 10%);
+    color: $blue;
+    font-family: $sans;
+    font-weight: 400;
+    border-radius: 5px;
+    float: right;
+    @include transition(0.2s);
+  }
+}

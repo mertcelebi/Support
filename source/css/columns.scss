@@ -1,0 +1,68 @@
+// Style
+.col {
+  margin-top: 3em;
+  font-family: $sans-light;
+  text-align: center;
+
+  @include desktop {
+    width: 33.3%;
+    float: left;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  @include mobile {
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+  }
+
+  .col-icon {
+    margin: auto;
+    background-position: center;
+    background-size: auto 80%;
+    background-repeat: no-repeat;
+
+    @include desktop {
+      height: 150px;
+      width: 80%;
+    }
+
+    @include mobile {
+      height: 12em;
+      width: 80%;
+      background-size: auto 95%;
+    }
+  }
+
+  h4 {
+    font-family: $sans;
+    font-weight: 500;
+    margin: 1em 0 0.5em 0;
+
+    @include mobile {
+      font-size: 2em;
+    }
+  }
+
+  p {
+    font-family: $sans-light;
+    font-weight: 200;
+    color: $dark-grey;
+    margin: 0;
+
+    @include desktop {
+      font-size: 0.9em;
+      line-height: 1.4;
+    }
+
+    @include mobile {
+      font-size: 1.2em;
+      line-height: 1.5;
+    }
+  }
+}
+
+.col-buffer {
+  clear: both;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "pb-support",
+  "version": "0.0.1",
+  "authors": [
+    "Graham Kaemmer <graham@patientbank.us>"
+  ],
+  "description": "Support pages for PatientBank",
+  "license": "MIT",
+  "homepage": "https://support.patientbank.us",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5",
+    "font-awesome": "~4.3.0",
+    "bourbon": "~4.2.3"
+  }
+}

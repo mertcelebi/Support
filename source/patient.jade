@@ -1,0 +1,11 @@
+extends ./index.jade
+block title
+  title Patient FAQs | PatientBank Support
+
+block content
+  .faq
+    .wrapper
+      h2 Patient FAQs
+
+      div.markdown-document
+        include:markdown ./markdown/patient_faq.md

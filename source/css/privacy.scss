@@ -1,0 +1,112 @@
+.privacy {
+  background-color: #fff;
+  padding-bottom: 2.5em;
+
+  .privacy-header {
+    background-color: $light-blue;
+    padding: 6em 0 2.5em;
+
+    h1 {
+      color: #fff;
+      margin: 0;
+      small {
+        color: mix(#fff, $light-blue, 50%);
+      }
+    }
+    margin-bottom: 2.5em;
+  }
+
+  ol {
+    // padding: 0;
+  }
+  ol ol {
+    list-style-type: lower-roman;
+  }
+
+  li {
+    margin-top: 1em;
+  }
+
+  p.info {
+    border-left: 3px solid $blue;
+    font-size: 1.2em;
+    padding: 1em 1.5em;
+    margin: 2.5em 0;
+  }
+
+  .specification {
+    width: 50%;
+    padding: 0 1em;
+    @include small-mobile {
+      width: 100%;
+    }
+  }
+
+  section.statutes {
+    color: #777;
+  }
+}
+
+
+.statute-container {
+  display: inline-block;
+  width: 95%;
+  vertical-align: top;
+}
+
+ol .statute-text {
+  width: 52%;
+  @include small-mobile {
+    width: 100%;
+  }
+}
+
+ol .pb-policy {
+  width: 48%;
+  @include small-mobile {
+    width: 100%;
+  }
+}
+
+ol ol .statute-text, ol ol .pb-policy {
+  width: 50%;
+  @include small-mobile {
+    width: 100%;
+  }
+}
+
+.statute {
+}
+
+.statute-text {
+  padding: 0 1em;
+  float: left;
+  @include small-mobile {
+    width: 100%;
+    float: none;
+    border-left: 0 none; 
+  }
+}
+
+.pb-policy {
+  // display: table-cell;
+  float: left;
+  border-left: 3px solid $blue;
+  color: #000;
+  top: 0;
+  left: 100%;
+  padding: 0 1em;
+  width: 50%;
+  &::after {
+    content: " ";
+    clear: both;
+  }
+  &.pb-policy-na {
+    color: #777;
+  }
+  @include small-mobile {
+    float: none;
+    border-left: 0 none;
+  }
+}
+

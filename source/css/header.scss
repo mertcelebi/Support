@@ -1,0 +1,60 @@
+// Variables
+$header-height: 80px;
+
+// Style
+.header {
+  background: white;
+  height: $header-height;
+  font-family: $sans;
+  font-weight: lighter;
+  border-bottom: 1px solid $light-border-grey;
+
+  a {
+    text-decoration: none;
+    @include transition(0.3s);
+    color: $blue;
+    display: inline-block;
+    height: $header-height / 2.5;
+    margin-top: ($header-height - $header-height / 2.5) / 2;
+    box-sizing: border-box;
+    line-height: $header-height / 2.5;
+  }
+  
+  .logo {
+    float: left;
+    font-weight: 100;
+    font-size: 1.6em;
+    font-family: $sans-light;
+
+    img {
+      height: 0.8em;
+      @include opacity(0.7);
+    }
+
+    &:hover {
+      img {
+        @include opacity(1);
+      }
+    }
+  }
+  
+  .links {
+    float: right;
+        
+    a {
+      margin-left: 1em;
+      color: #777;
+      font-family: $sans-light;
+      
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 3em;
+    line-height: 1em;
+  }
+}

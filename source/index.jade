@@ -1,0 +1,72 @@
+- PUBLIC_URL = "https://www.patientbank.us"
+
+doctype html
+html(lang="en")
+  head
+    block title
+      title PatientBank | Own Your Health
+    link(href="/assets/favicon.ico" rel="shortcut icon")
+    meta(charset="utf-8")
+    meta(content='IE=edge,chrome=1' http-equiv='X-UA-Compatible')
+    meta(content='width=device-width, initial-scale=1, maximum-scale=2' name='viewport')
+    meta(name="description" content="PatientBank is a health record bank that makes it easy to gather and share medical records. Doctors and patients use PatientBank to simplify medical record exchange.")
+    meta(name="keywords" content="health records,medical records,health information,personal health record,records intake")
+    
+    link(rel="stylesheet" href="css/application.css")
+
+    script.
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-53777563-3', 'auto');
+      ga('send', 'pageview');
+
+  body
+    include ./includes/header.jade
+
+    .support
+      .support-header
+        .wrapper
+          a(href="/")
+            h1
+              | PatientBank Support 
+              small How can we help?
+      block content
+        .support-choices
+          .wrapper
+            .row
+              .col-sm-6
+                a(href="/patient.html").support-choice.patient
+                  img(src="/images/patient.png")
+                  span Patient FAQ
+              .col-sm-6
+                a(href="/intake.html").support-choice.intake
+                  img(src="/images/intake.png")
+                  span Intake FAQ
+
+      block contact
+        hr
+        .contact#contact
+          .contact-header
+            a(title="contact")
+            h4 Still can't find an answer?
+            h5 Get in touch with us.
+          include ./includes/contact-info.jade
+
+    include ./includes/footer.jade
+
+    script.
+      var _gauges = _gauges || [];
+      (function() {
+        var t   = document.createElement('script');
+        t.type  = 'text/javascript';
+        t.async = true;
+        t.id    = 'gauges-tracker';
+        t.setAttribute('data-site-id', '52e1b61192c6ac19a100006c');
+        t.src = '//secure.gaug.es/track.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(t, s);
+      })();
+
+  // <div>Icon made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>

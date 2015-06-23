@@ -1,0 +1,215 @@
+// Variables
+$slide-height: 500px;
+
+// Style
+.slide {
+  min-height: 500px;
+  position: relative;
+  background-color: white;
+  overflow: hidden;
+
+  @include mobile {
+    border-bottom: 1px solid $border-grey;
+  }
+
+  .slide-bg,
+  .slide-provider-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+
+  .slide-bg {
+    background-image: image-url('network.png');
+    background-position: center 100px;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    opacity: 0.02;
+  }
+
+  .slide-provider-bg {
+    
+  }
+
+  .slide-center {
+    z-index: 1;
+    text-align: center;
+
+    @include desktop {
+      width: 90%;
+      margin: auto;
+      padding: 7em 0;
+    }
+  }
+
+  .slide-left {
+    z-index: 1;
+
+    @include desktop {
+      width: 60%;
+      padding: 4em 0;
+    }
+
+    @include small-mobile {
+      width: 100%;
+      padding: 3em 0;
+      text-align: center;
+    }
+  }
+
+  h1 {
+    font-family: $sans-ultralight;
+    margin: 0;
+    color: $blue;
+    font-weight: 200;
+    letter-spacing: 2px;
+
+    @include desktop {
+      font-size: 4em;
+      line-height: 1;
+    }
+
+    @include mobile {
+      font-size: 3em;
+      line-height: 1.2;
+    }
+  }
+
+  h4 {
+    font-family: $sans-light;
+    font-weight: 300;
+    font-size: 1.5em;
+    line-height: 1.5;
+  }
+
+  a {
+    display: inline-block;
+    font-family: $sans-light;
+    font-weight: 400;
+    color: $blue;
+    text-decoration: none;
+    border: 2px solid $blue;
+    @include border-radius(4px);
+    @include transition(0.3s);
+    background-color: rgba(255, 255, 255, 0.6);
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.8);
+      color: $green;
+      border-color: darken($green, 5%);
+
+      @include mobile {
+        background-color: $blue;
+        color: white;
+        border-color: darken($blue, 5%);
+      }
+    }
+
+    @include desktop {
+      font-size: 1.5em;
+      padding: 0.75em 1em;
+    }
+
+    @include mobile {
+      font-size: 1.8em;
+      padding: 0.8em 1.3em;
+    }
+  }
+
+  $record-border: 5px;
+  .slide-records {
+    @include desktop {
+      position: absolute;
+      bottom: -5%;
+      right: -10%;
+      width: 50%;
+      height: 100%;
+    }
+
+    @include mobile {
+      position: relative;
+      width: 100%;
+      height: $slide-height / 2;
+    }
+  }
+
+  .slide-record {
+    position: absolute;
+    border-radius: 10px;
+    border: $record-border solid $blue;
+    background-color: rgba(255, 255, 255, 0.75);
+    bottom: -100%;
+    opacity: 0.8;
+    @include transition(0.8s);
+    background-size: 100%;
+    background-position: center 30px;
+    background-repeat: no-repeat;
+
+    @include desktop {
+      width: 50%;
+      height: 30%;
+    }
+
+    @include mobile {
+      width: 40%;
+      height: 60%;
+    }
+  }
+
+  #record-1 {
+    border-color: $blue;
+    background-color: lighten($blue, 45%);
+    background-image: image-url('record1.png');
+
+    @include desktop {
+      width: 65%;
+      height: 70%;
+    }
+
+    @include mobile {
+      width: 50%;
+      height: 100%;
+      left: (100% - 50%) / 2;
+    }
+  }
+
+  #record-2 {
+    border-color: $green;
+    background-color: lighten($green, 40%);
+    background-image: image-url('record2.png');
+
+    @include desktop {
+      width: 45%;
+      height: 43%;
+      left: -20%;
+    }
+
+    @include mobile {
+      width: 35%;
+      height: 70%;
+      left: 10%;
+    }
+  }
+
+  #record-3 {
+    border-color: $red;
+    background-color: lighten($red, 45%);
+    background-image: image-url('record3.png');
+
+    @include desktop {
+      width: 50%;
+      left: 35%;
+      height: 52%;
+    }
+
+    @include mobile {
+      width: 40%;
+      height: 50%;
+      left: auto;
+      right: 10%;
+    }
+  }
+}

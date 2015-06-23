@@ -1,0 +1,150 @@
+$support-padding: 15px;
+
+@keyframes highlight {
+  0% {
+    background-color: #ffd;
+  }
+
+  100% {
+    background-color: #fff;
+  }
+}
+
+.support {
+  background-color: #fff;
+  overflow: hidden;
+
+  .support-header {
+    background-color: $light-blue;
+    padding: $support-padding * 5;
+
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    h1 {
+      text-align: center;
+      color: #fff;
+      margin: 0;
+      small {
+        color: mix(#fff, $light-blue, 50%);
+        display: block;
+      }
+    }
+    margin-bottom: $support-padding;
+  }
+
+  h3, h5 {
+    margin: $support-padding 0;
+  }
+
+  p.info {
+    border-left: 3px solid $blue;
+    font-size: 1.2em;
+    padding: 1em 1.5em;
+    margin: 2.5em 0;
+  }
+
+  .support-choices {
+    margin: $support-padding * 2 0;
+    .support-choice {
+      display: block;
+      text-align: center;
+      padding: $support-padding * 3 0;
+      //border: 1px solid transparent;
+      border: 1px solid $light-border-grey;
+      background-color: white;
+      color: $blue;
+      &:hover {
+        color: $blue;
+        background-color: $light-grey;
+        border-color: darken($light-border-grey, 10%);
+        text-decoration: none;
+      }
+      img {
+        height: 40px;
+        width: auto;
+      }
+      span {
+        display: block;
+        font-size: 24px;
+        margin: $support-padding 0 0;
+        font-family: $sans-light;
+      }
+    }
+  }
+
+  .contact {
+    margin: $support-padding * 3;
+    text-align: center;
+    &:target {
+      animation: highlight 1s;
+      -webkit-animation: highlight 1s;
+      -moz-animation: highlight 1s;
+      -o-animation: highlight 1s;
+    }
+    h1 {
+      padding: 0 0 $support-padding;
+      border-bottom: 1px solid $light-border-grey;
+    }
+    h4 {
+      font-weight: bold;
+      font-size: 20px;
+      margin: 0 0 0.3em;
+      small {
+        font-weight: normal;
+      }
+    }
+    h5 {
+      font-size: 16px;
+      margin: 0 0 0.3em;
+    }
+    .contact-header {
+      margin: $support-padding * 3 0;
+    }
+    .contact-hours {
+      margin: $support-padding * 3 0;
+    }
+    .contact-info {
+      a, span {
+        display: block;
+        margin: $support-padding 0 0;
+        font-size: 24px;
+        font-family: $sans-light;
+      }
+      i {
+        display: block;
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+.markdown-document {
+  h3 {
+    font-weight: bold;
+  }
+}
+
+
+.faq {
+  font-size: 18px;
+  h2 {
+    margin: $support-padding * 2 0;
+    border-bottom: 1px solid $light-border-grey;
+  }
+  .question-container {
+    margin-top: -1em;
+    margin-bottom: -1em;
+  }
+  .question {
+    font-weight: bold;
+  }
+  .answer {
+    li {
+      margin: 0;
+    }
+  }
+}

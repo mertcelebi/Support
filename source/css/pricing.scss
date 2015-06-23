@@ -1,0 +1,40 @@
+// Style
+.feature-row {
+  @extend .row;
+  border-bottom: 1px solid $border-grey;
+  padding: 1em 0;
+  margin: auto;
+  @include desktop {
+    width: 70%;
+    min-width: 700px;
+    max-width: 1000px;
+  }
+}
+
+.feature-key {
+  @extend .col-md-10, .col-sm-10, .col-xs-10;
+  h5 {
+    font-size: 1.4em;
+    font-family: $sans;
+    margin: 0;
+    margin-bottom: 0.25em;
+    text-align: left;
+  }
+
+  p {
+    font-size: 0.9em;
+    line-height: 1.2;
+    font-family: $sans-light;
+    color: $dark-grey;
+    margin: 0;
+    text-align: left;
+  }
+}
+
+.feature-cell {
+  @extend .col-md-2, .col-sm-2, .col-xs-2;
+  font-family: $sans-light;
+  text-align: center;
+  font-size: 2em;
+  vertical-align: middle;
+}

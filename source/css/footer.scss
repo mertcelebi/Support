@@ -1,0 +1,38 @@
+// Style
+.footer {
+  padding: 3em 0;
+  font-family: $sans-light;
+  text-align: center;
+
+  .links {
+    margin-bottom: 0.5em;
+  }
+
+  a {
+    margin-right: 0.5em;
+    text-decoration: none;
+    color: white;
+    @include transition(0.2s);
+    text-transform: uppercase;
+
+    @include desktop {
+      display: inline-block;
+    }
+
+    @include mobile {
+      display: block;
+      text-align: center;
+      font-size: 1.2em;
+      padding: 0.5em 0;
+    }
+  }
+
+  .copyright {
+    font-size: 0.9em;
+    color: $light-grey;
+
+    @include mobile {
+      text-align: center;
+    }
+  }
+}

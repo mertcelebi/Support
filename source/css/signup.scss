@@ -1,0 +1,264 @@
+// Variables
+$signup-width: 700px;
+
+// Style
+.signup-button {
+  display: inline-block;
+  text-align: center;
+  margin: 3em 0;
+  padding: 1em 2em;
+  font-size: 1.5em;
+  color: $blue;
+  border: 1px solid $blue;
+  @include border-radius(5px);
+  font-family: $sans-light;
+  text-decoration: none;
+  @include transition(0.2s);
+
+  &:hover {
+    text-decoration: none;
+    border-color: $green;
+    color: $green;
+  }
+}
+
+.signup-errors {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  background-color: $red;
+  color: white;
+  z-index: 100;
+  padding: 1em 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  @include transition(0.3s);
+
+  &:hover {
+    background-color: lighten($red, 20%);
+  }
+}
+
+.research-form {
+  label {
+    font-size: 1.5em;
+    color: $blue;
+  }
+
+  p {
+    font-size: 1.2em;
+    margin: 0.2em 0;
+    display: block;
+  }
+
+  .other-input {
+    font-size: 1em;
+    padding: 0.4em;
+    display: inline-block;
+    width: 50%;
+    font-family: $sans-light;
+  }
+}
+
+.signup-form {
+  label {
+    font-size: 1.2em;
+  }
+}
+
+.signup-header,
+.signup-form,
+.research-form {
+  width: 100%;
+  max-width: $signup-width;
+  margin: auto;
+}
+
+.signup-form,
+.research-form {
+  margin-bottom: 3em;
+  
+  .form-group {
+    margin-bottom: 2em;
+  }
+  
+  label {
+    font-family: $sans-light;
+    font-weight: 300;
+    line-height: 1.2;
+    padding-bottom: 0.5em;
+    display: block;
+  }
+  
+  input,
+  textarea,
+  button[type=submit] {
+    width: 100%;
+    font-size: 1.5em;
+    padding: 0.75em 0.5em;
+    display: block;
+    box-sizing: border-box;
+    border: 1px solid lighten($blue, 30%);
+    outline: none;
+    @include transition(0.2s);
+    font-family: $sans-light;
+    
+    &:active,
+    &:focus {
+      border: 1px solid $blue;
+    }
+  }
+
+  input[type=radio],
+  input[type=checkbox] {
+    display: inline-block;
+    width: auto;
+  }
+  
+  textarea {
+    font-size: 1.2em;
+    resize: none;
+    height: 10em;
+  }
+
+  .small {
+    font-size: 1.1em;
+    font-family: $sans-light;
+    color: $dark-grey;
+    margin: 0 0 2em 0;
+  }
+  
+  button[type=submit] {
+    width: 100%;
+    display: block;
+    line-height: 1.5;
+    padding: 1em 3em;
+    cursor: pointer;
+    border: 1px solid lighten($blue, 10%);
+    color: $blue;
+    font-family: $sans-light;
+    font-size: 1.5em;
+    //text-transform: uppercase;
+    @include border-radius(5px);
+    background: none;
+    
+    &:hover,
+    &:focus {
+      //border-color: darken($blue, 20%);
+      background-color: $blue;
+      color: white;
+    }
+  }
+
+  .signup-plans {
+    text-align: center;
+    margin-top: 1em;
+  }
+
+  .hidden {
+    display: none;
+  }
+}
+
+.signup-plan {
+  display: inline-block;
+  box-sizing: border-box;
+  border: 1px solid $border-grey;
+  text-align: center;
+  width: 100%;
+  @include border-radius(5px);
+  padding: 0;
+  margin-bottom: 1em;
+
+  .signup-plan-header,
+  .signup-plan-body,
+  .signup-plan-footer {
+    padding: 1em;
+  }
+
+  .signup-plan-header {
+    border-bottom: 1px solid $border-grey;
+
+    h3 {
+      margin: 0;
+    }
+  }
+
+  .signup-plan-body {
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      text-align: center;
+      font-size: 1.2em;
+      margin: 0.5em 0;
+    }
+  }
+
+  .signup-plan-footer {
+    border-top: 1px solid $border-grey;
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+    }
+
+    button,
+    a {
+      width: 100%;
+      background-color: transparent;
+      border: 1px solid lighten($green, 15%);
+      @include border-radius(3px);
+      padding: 0.8em 0;
+      color: lighten($green, 10%);
+      font-size: 1.1em;
+      outline: none;
+      @include transition(0.2s);
+      cursor: pointer;
+
+      &:hover {
+        border-color: $green;
+        color: $green;
+      }
+
+      .selected {
+        display: none;
+      }
+
+      &.selected {
+        color: white;
+        background-color: $green;
+        border-color: $green;
+
+        .unselected {
+          display: none;
+        }
+
+        .selected {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+
+.signup-success {
+  display: none;
+  text-align: center;
+  color: $green;
+  margin-bottom: 3em;
+  
+  h1 {
+    font-family: $sans-ultralight;
+    font-size: 4em;
+    margin-bottom: 0.5em;
+  }
+
+  h3 {
+    font-family: $sans-light;
+    font-weight: 100;
+    font-size: 1.5em;
+  }
+}
