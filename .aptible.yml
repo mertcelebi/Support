@@ -1,3 +1,2 @@
 before_release:
-  - bundle install
   - ./node_modules/grunt-cli/bin/grunt build
