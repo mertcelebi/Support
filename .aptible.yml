@@ -1,0 +1,2 @@
+before_release:
+  - ./node_modules/grunt-cli/bin/grunt build
