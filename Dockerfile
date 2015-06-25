@@ -1,4 +1,4 @@
 # Dockerfile
 FROM quay.io/aptible/autobuild
 
-EXPOSE 4000
+EXPOSE 2000
