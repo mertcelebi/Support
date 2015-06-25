@@ -20,11 +20,11 @@ As of now, a patient's records will not be uploaded into Epic. All information m
 
 ### How do I review, make edits or remove documents in PatientBank?
 
-All incoming records are reviewed and duplicate data, blank pages and other redundant records are removed by administrative personnel. If you find incorrect data or have other issues with information stored in PatientBank, please [contact us](/contact.html).
+All incoming records are reviewed and duplicate data, blank pages and other redundant records are removed by administrative personnel. If you find incorrect data or have other issues with information stored in PatientBank, please [contact us](/contact).
 
 ### Where can I direct technical questions about PatientBank?
 
-Please see [our contact page](/contact.html). **855-9-PATIENT ext. 5** will contact technical support.
+Please see [our contact page](/contact). **855-9-PATIENT ext. 5** will contact technical support.
 
 ### What if the patient does not have an email address or access to the internet?
 

@@ -7,10 +7,10 @@ Not to worry! We can help jog your memory. Here is a list of doctors and institu
 - **Pharmacy**: Where do you pick up your medications? 
 - **Lab**: Do you go to a specific lab to get bloodwork? Quest and LabCorp are the two big laboratory chains. 
 
-If this doesn’t help, contact [in-person support](/contact.html).
+If this doesn’t help, contact [in-person support](/contact).
 
 ### Can someone help me work through the process? 
-We have a support team available to help you walk through the process of setting up your PatientBank account. Please [see here](/contact.html) for our contact info and hours.
+We have a support team available to help you walk through the process of setting up your PatientBank account. Please [see here](/contact) for our contact info and hours.
 
 ### Is my data secure? 
 At PatientBank, data security is our top priority. We go above and beyond the safety requirements required by HIPAA. Please see our [security page](https://www.patientbank.us/hipaa) for more details. 
@@ -31,7 +31,7 @@ The beauty of PatientBank is that it gives the patient ownership and control ove
 We have seen that when patients look at their records they often find errors in parts of the data. We currently do not support record editing. If you see an error please mention it to your previous and future doctors. If record editing is a feature you feel strongly about please let us know here: 
 
 ### What if part(s) of my record is incorrect? 
-As mentioned above, we currently do not support record editing. If you see an error please let your previous and future doctors know. If record editing is a feature you feel strongly about please [let us know](/contact.html).
+As mentioned above, we currently do not support record editing. If you see an error please let your previous and future doctors know. If record editing is a feature you feel strongly about please [let us know](/contact).
 
 ### Can my other doctors view my data on PatientBank? 
 Yes, at your discretion, you may give your doctors the ability to login and view your records.

@@ -74,12 +74,17 @@ module.exports = function(grunt) {
       }
     },
  
-    connect: {
-      server: {
+    execute: {
+      target: {
+        src: ['app.js']
+      }
+    },
+
+    concurrent: {
+      dev: {
+        tasks: ['execute', 'watch'],
         options: {
-          port: 4000,
-          base: 'build',
-          hostname: '*'
+          logConcurrentOutput: true
         }
       }
     }
@@ -91,7 +96,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-jade');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-execute');
+  grunt.loadNpmTasks('grunt-concurrent');
 
   grunt.registerTask(
     'stylesheets', 
@@ -108,6 +114,6 @@ module.exports = function(grunt) {
   grunt.registerTask(
     'default', 
     'Watches the project for changes, automatically builds them and runs a server.', 
-    [ 'build', 'connect', 'watch' ]
+    [ 'build', 'concurrent' ]
   );
 };
