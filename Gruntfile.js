@@ -1,5 +1,6 @@
 module.exports = function(grunt) {
   grunt.initConfig({
+
     copy: {
       build: {
         cwd: 'source',
@@ -7,6 +8,12 @@ module.exports = function(grunt) {
         dest: 'build',
         expand: true
       },
+      fonts: {
+        cwd: 'bower_components/font-awesome/fonts',
+        src: '**',
+        dest: 'build/fonts',
+        expand: true
+      }
     },
  
     clean: {
