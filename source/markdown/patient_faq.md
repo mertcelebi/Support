@@ -35,3 +35,12 @@ As mentioned above, we currently do not support record editing. If you see an er
 
 ### Can my other doctors view my data on PatientBank? 
 Yes, at your discretion, you may give your doctors the ability to login and view your records.
+
+### What if my doctor has retired?
+If your doctor has left his or her group practice or hospital, your records likely remain at that group practice or hospital. Generally speaking, you should send your requests to the institutions where you received care- your records are (almost) always located at the institution where you were seen.  
+
+### How long will my doctor keep my medical record?
+The length of time required to retain your medical record differs from state to state. However, the average time is seven years after the last date of treatment for an adult and for seven years after a minor has reached the age of 18 (or 21 in some states).
+
+### Should the requests be sent to the hospital or practice or to my specific doctor?
+Generally speaking, you should send your requests to the institutions where you received care- your records are (almost) always located at the institution where you were seen. Be sure to list your doctor’s name on the request so that the institutions know what records to send.
