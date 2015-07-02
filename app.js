@@ -3,6 +3,7 @@ var app = express();
 
 app.use('/images', express.static('build/images'));
 app.use('/css', express.static('build/css'));
+app.use('/fonts', express.static('build/fonts'));
 
 var server = app.listen(2000, '0.0.0.0', function () {
   console.log("Server listening on port 2000");
