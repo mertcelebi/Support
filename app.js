@@ -5,8 +5,13 @@ app.use('/images', express.static('build/images'));
 app.use('/css', express.static('build/css'));
 app.use('/fonts', express.static('build/fonts'));
 
-var server = app.listen(2000, '0.0.0.0', function () {
-  console.log("Server listening on port 2000");
+// Force SSL
+app.use(function(req, res, next) {
+  if((!req.secure) && (req.get('X-Forwarded-Proto') !== 'https')) {
+    res.redirect('https://' + req.get('Host') + req.url);
+  } else {
+    next();
+  }
 });
 
 app.get('/', function(req, res) {
@@ -23,4 +28,8 @@ app.get('/intake', function(req, res) {
 
 app.get('/contact', function(req, res) {
   res.sendFile(__dirname + '/build/contact.html');
+});
+
+var server = app.listen(2000, '0.0.0.0', function () {
+  console.log("Server listening on port 2000");
 });
