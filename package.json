@@ -17,7 +17,8 @@
   },
   "engine": "node >= 0.10",
   "scripts": {
-    "postinstall": "./node_modules/bower/bin/bower install"
+    "postinstall": "./node_modules/bower/bin/bower install",
+    "test": "node ./test.js"
   },
   "devDependencies": {
     "grunt-concurrent": "^2.0.0",

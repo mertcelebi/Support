@@ -1,0 +1,9 @@
+deployment:
+  production:
+    branch: production
+    commands:
+      - git push git@beta.aptible.com:pb-support-production.git $CIRCLE_SHA1:master
+  staging:
+    branch: master
+    commands:
+      - git push git@beta.aptible.com:pb-support.git $CIRCLE_SHA1:master
