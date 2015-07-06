@@ -1,4 +1,4 @@
-### What if the patients does not know where he/she received care?
+### What if the patient does not know where he/she received care?
 
 The PatientBank patient portal will prompt the patient to enter the following information: 
 
@@ -8,7 +8,7 @@ The PatientBank patient portal will prompt the patient to enter the following in
 - Pharmacy
 - Lab
 
-Still, the patient may not remember where they received care. This will require the intake coordinator to call the patient to help talk them through the process. 
+Still, the patient may not remember where they received care. This will require the intake coordinator to call the patient to help talk them through the process.
 
 ### Can I request specific information on behalf of the patient?
 
