@@ -1,22 +1,11 @@
-### What if the patient does not know where he/she received care?
-
-The PatientBank patient portal will prompt the patient to enter the following information: 
-
-- Primary care doctor
-- Specialist doctor
-- Hospital
-- Pharmacy
-- Lab
-
-Still, the patient may not remember where they received care. This will require the intake coordinator to call the patient to help talk them through the process.
 
 ### Can I request specific information on behalf of the patient?
 
-You can create record requests on behalf of patients that will be sent to them for authorization. You can specify what  pieces of information are requested from a given institution on the request.
+You can create record requests on behalf of patients that will be sent to them for authorization. You can specify what  pieces of information are requested from a given institution by editing the free text in the request template.
 
 ### How/when does the information get uploaded into the EMR?
 
-As of now, a patient's records will not be uploaded into individual EMRs. All information may be viewed by the intake staff or doctors in the PatientBank provider portal. 
+As of now, a patient's records will not be uploaded into individual EMRs. All information may be viewed by the intake staff or doctors in the PatientBank provider portal. In addition, all records may be printed from PatientBank at any time by clicking on a patient, choosing Documents from the drop down menu and clicking on Print All. 
 
 ### How do I review, make edits or remove documents in PatientBank?
 
@@ -28,7 +17,7 @@ Please see [our contact page](/contact). **855-9-PATIENT ext. 5** will contact t
 
 ### What if the patient does not have an email address or access to the internet?
 
-If the patient does not have access to email for any reason the intake process will revert back to the manual process. One option is to suggest that patient enlist an adult relative for help. PatientBank allows “authorized entities” to serve as proxies for patient and may request and authorize records. 
+If the patient does not have access to email for any reason, the intake process will revert back to the manual process. One option is to suggest that patient enlist an adult relative for help. PatientBank allows “authorized entities” to serve as proxies for patient and may request and authorize records. 
 
 ### What if the patient is coming from outside the country or has received care in a foreign country?
 
