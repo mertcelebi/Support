@@ -1,3 +1,7 @@
+### What if the fax number listed in PatientBank is incorrect? Can I edit the fax number or add a new contact at a given institution?
+
+You may change the fax number by editing the number directly in the request creation page. This will change the fax number for that provider permanently.
+You may also add a new contact at a given institution by clicking on Other in the Request Type drop down box. You can then create a new contact and list their fax number. 
 
 ### Can I request specific information on behalf of the patient?
 
