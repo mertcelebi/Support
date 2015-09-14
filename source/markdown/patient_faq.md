@@ -15,6 +15,9 @@ We have a support team available to help you walk through the process of setting
 ### Is my data secure? 
 At PatientBank, data security is our top priority. We go above and beyond the safety requirements required by HIPAA. Please see our [security page](https://www.patientbank.us/hipaa) for more details. 
 
+### Can I request records on behalf of a family member? 
+You can create an account for a family member by signing up for PatientBank under their name and then listing yourself as an "Authorized Entity." You can then create requests for records on their behalf. If you are the legal guardian and they are under 18 years old you may sign for them. If they are older than 18 they will have to sign the authorization (you may help them of course).    
+
 ### What if my records are outside the country? 
 We currently do not support gathering data from outside the United States. If you think this feature would be useful please [let us know](/contact). If you have paper copies of your records from a foreign country, you can upload them manually using the PatientBank portal.
 
